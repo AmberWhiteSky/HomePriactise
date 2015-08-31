@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#cccccc"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="卫星列表" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:background="#cccccc"
+        android:layout_weight="1"
+        android:gravity="center" >
+
+        <ListView
+            android:id="@+id/mylist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:gravity="center"
+             android:background="#cccccc"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button_list_insert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:text="添加" />
+        <!-- 这是个摆设为了美观起到了占位的作用 -->
+        <Button 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:text="zhanwei" 
+            android:visibility="invisible"/>
+
+        <Button
+            android:id="@+id/button_list_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:text="返回" />
+    </LinearLayout>
+
+  
+
+</LinearLayout>
